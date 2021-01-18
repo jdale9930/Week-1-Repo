@@ -4,101 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
+    
     <style>
-table{
-border: solid 2px black;
-background-color: bisque;
-}
+        table{
+            border: solid 2px black;
+            background-color: bisque;
+        }
 
-td{
-    border: solid 2px black;
-    text-align: center;
-    background-color: white;
-    height: 50px;
-    width: 150px;
-}
+        td{
+            border: solid 2px black;
+            text-align: center;
+            background-color: white;
+            height: 50px;
+            width: 150px;
+        }
 
-th{
-    border: solid 2px black;
-    text-align: center;
-    background-color: white;
-}
-
+        th{
+            border: solid 2px black;
+            text-align: center;
+            background-color: white;
+        }
     </style>
+
 </head>
 <body>
     <h1>Weekly Schedule</h1>
     <table>
-<tr>
-<th></th>
-<th>Sunday</th>
-<th>Monday</th>
-<th>Tuesday</th>
-<th>Wednesday</th>
-<th>Thursday</th>
-<th>Friday</th>
-<th>Saturday</th>
-</tr>
+        <tr>
+            <th></th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
 
-<tr>
-<th>Morning</th>
-<td></td>
-<td style = "background-color: forestgreen" colspan = "5" rowspan = "2">Code Academy</td>
-<td>Big Breakfast Time</td>
-</tr>
+        <tr>
+            <th>Morning</th>
+            <td></td>
+            <td style = "background-color: forestgreen" colspan = "5" rowspan = "2">Code Academy</td>
+            <td>Big Breakfast Time</td>
+        </tr>
 
-<tr>
-<th>Afternoon</th>
-<td rowspan = "2">Stream on Twitch</td>
-<td>Homework</td> 
-</tr>
+        <tr>
+            <th>Afternoon</th>
+            <td rowspan = "2">Stream on Twitch</td>
+            <td>Homework</td> 
+        </tr>
 
-<tr>
-<th>Evening</th>
-<td></td>
-<td>Monster Hunter</td>
-<td>Stream on Twitch</td>
-<td></td>
-<td>Hang out with Friends</td>
-<td>Date Night</td>
-</tr>
-</table>
+        <tr>
+            <th>Evening</th>
+            <td></td>
+            <td>Monster Hunter</td>
+            <td>Stream on Twitch</td>
+            <td></td>
+            <td>Hang out with Friends</td>
+            <td>Date Night</td>
+        </tr>
+    </table>
+
 <hr>
-<h3>Schedule Updater</h3>
-<p>Day</p>
-<input type="radio" id = "weekday1" name = "weekday" value = "sunday">
-<label for="weekday1">Sunday</label>
-<input type="radio" id = "weekday2" name = "weekday" value = "monday">
-<label for="weekday2">Monday</label>
-<input type="radio" id = "weekday3" name = "weekday" value = "tuesday">
-<label for="weekday3">Tuesday</label>
-<input type="radio" id = "weekday4" name = "weekday" value = "wednesday">
-<label for="weekday4">Wednesday</label>
-<input type="radio" id = "weekday5" name = "weekday" value = "thursday">
-<label for="weekday5">Thursday</label>
-<input type="radio" id = "weekday6" name = "weekday" value = "friday">
-<label for="weekday6">Friday</label>
-<input type="radio" id = "weekday7" name = "weekday" value = "saturday">
-<label for="weekday7">Saturday</label>
 
-<p>Timeframe</p>
-<input type="checkbox" id = "timeframe1" name = "timeframe" value = "morning">
-<label for="timeframe1">Morning</label>
-<input type="checkbox" id = "timeframe2" name = "timeframe" value = "afternoon">
-<label for="timeframe2">Afternoon</label>
-<input type="checkbox" id = "timeframe3" name = "timeframe" value = "evening">
-<label for="timeframe3">Evening</label>
+<section>
+    <h3>Schedule Updater</h3>
+    <p>Day</p>
+        <input type="radio" id = "weekday1" name = "weekday" value = "sunday">
+            <label for="weekday1">Sunday</label>
+        <input type="radio" id = "weekday2" name = "weekday" value = "monday">
+            <label for="weekday2">Monday</label>
+        <input type="radio" id = "weekday3" name = "weekday" value = "tuesday">
+            <label for="weekday3">Tuesday</label>
+        <input type="radio" id = "weekday4" name = "weekday" value = "wednesday">
+            <label for="weekday4">Wednesday</label>
+        <input type="radio" id = "weekday5" name = "weekday" value = "thursday">
+            <label for="weekday5">Thursday</label>
+        <input type="radio" id = "weekday6" name = "weekday" value = "friday">
+            <label for="weekday6">Friday</label>
+        <input type="radio" id = "weekday7" name = "weekday" value = "saturday">
+            <label for="weekday7">Saturday</label>
 
-<p>Background Color</p>
-<select name="Background Color" id ="backgroundColor">
-    <option value="blue">Blue</option>
-    <option value="red">Red</option>
-    <option value="green">Green</option>
-    <option value="yellow">Yellow</option>
-</select>
+    <p>Timeframe</p>
+        <input type="checkbox" id = "timeframe1" name = "timeframe" value = "morning">
+            <label for="timeframe1">Morning</label>
+        <input type="checkbox" id = "timeframe2" name = "timeframe" value = "afternoon">
+            <label for="timeframe2">Afternoon</label>
+        <input type="checkbox" id = "timeframe3" name = "timeframe" value = "evening">
+            <label for="timeframe3">Evening</label>
 
-<p>Activity</p>
-<input type="textarea" width = "150px" height = "50px"></input>
-<!--<textarea id = "activty" class = "container"></textarea> -->
+    <p>Background Color</p>
+        <select name="Background Color" id ="backgroundColor">
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+    <p>Activity</p>
+        <input type="textarea" width = "150px" height = "50px"></input>
+
+</section>
+
 </body>
 </html>
