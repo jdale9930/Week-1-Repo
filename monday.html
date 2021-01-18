@@ -14,6 +14,8 @@ td{
     border: solid 2px black;
     text-align: center;
     background-color: white;
+    height: 50px;
+    width: 150px;
 }
 
 th{
@@ -47,13 +49,12 @@ th{
 
 <tr>
 <th>Afternoon</th>
-<td>Stream on Twitch</td>
+<td rowspan = "2">Stream on Twitch</td>
 <td>Homework</td> 
 </tr>
 
 <tr>
 <th>Evening</th>
-<td></td>
 <td></td>
 <td>Monster Hunter</td>
 <td>Stream on Twitch</td>
@@ -62,7 +63,11 @@ th{
 <td>Date Night</td>
 </tr>
 </table>
-
+<hr>
+<h3>Schedule Updater</h3>
+<p>Day</p>
+<input type="radio" id = "weekday1" name = "weekday" value = "sunday">
+<label for="weekday1">Sunday</label>
 
 </body>
 </html>
