@@ -11,11 +11,12 @@
         div{
             display: inline-block;
             margin: 5px;
-            height: 200px;
+            /* height: 200px;
             width: 200px;
             line-height: 200px;
             background-color: #FFa500;
             border: 1px solid black;
+            text-align: center; */
         }
 
         div:nth-child(1n+6){
@@ -25,6 +26,7 @@
             background-color: #0088FF;
         }
 
+        
         .top-heading{
             text-align: center;
             background-color: #FFa500;
@@ -34,43 +36,66 @@
             text-align: right;
             background-color: #0088FF;
         }
-        .div1{
-            border: 1px solid black;
+
+        .text-center{
             text-align: center;
+        }
+
+        .text-right{
+            text-align: right;
+        }
+
+        .bg-orange{
             background-color: #FFa500;
+        }
+
+        .bg-blue{
+            background-color: #0088FF
+        }
+
+        .small-box{
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+        }
+
+        .large-box{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+        }
+
+        .b-radius{
+            border-radius: 10px;
         }
         .div2{
             border: 2px solid red;
-            text-align: center;
-            background-color: #FFa500;
             border-radius: 10px;
         }
         .div3{
             border: 2px solid black;
-            text-align: center;
-            background-color: #0088FF;
             border-radius: 10px;
         }
 
         .div4{
             text-align: right;
-            background-color: #0088FF;
+            border: 0px;
         }
 
     </style>
 </head>
 <body>
-<h3 class="top-heading">DRY CSS</h3>
-<div class="div1 base orange">Div 1</div>
-<div class="div1 base orange">Div 2</div>
-<div class="div2">Div 3</div>
-<div class="div2">Div 4</div>
-<div class="div3">Div 5</div>
-<div class="div3">Div 6</div>
-<div class="div3">Div 7</div>
-<div class="div4">Div 8</div>
-<div class="div4">Div 9</div>
-<div class="div4">Div 10</div>
-<h3  class="bottom-heading">What can we fix?</h3>
+<h3 class="top-heading text-center bg-orange">DRY CSS</h3>
+<div class="div1 large-box bg-orange text-center">Div 1</div>
+<div class="div1 large-box bg-orange text-center">Div 2</div>
+<div class="div2 large-box bg-orange text-center b-radius">Div 3</div>
+<div class="div2 large-box bg-orange text-center b-radius">Div 4</div>
+<div class="div3 small-box bg-blue text-center b-radius">Div 5</div>
+<div class="div3 small-box bg-blue text-center b-radius">Div 6</div>
+<div class="div3 small-box bg-blue text-center b-radius">Div 7</div>
+<div class="div4 small-box bg-blue text-right">Div 8</div>
+<div class="div4 small-box bg-blue text-right">Div 9</div>
+<div class="div4 small-box bg-blue text-right">Div 10</div>
+<h3  class="bottom-heading bg-blue text-right">What can we fix?</h3>
 </body>
 </html>
