@@ -27,6 +27,25 @@
         .box:first-child{
             background-color: red;
         }
+
+        .box:last-child{
+            background-color: green;
+        }
+
+        .box:nth-child(7n + 2){
+            background-color: blue;
+        }
+
+        .box:nth-child(n+3):nth-child(-n+8){
+            background-color: orange;
+        }
+
+        .box:not(:nth-child(6)){
+            color: white;
+        }
+
+
+
         /*You will use each of these pseudo-classes the following amount of times:*/
         /*:first-child 1x DONE*/
         /*:last-child 1x DONE*/
