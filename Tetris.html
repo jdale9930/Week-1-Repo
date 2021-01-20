@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        /* div{ */
+            /* border: 1px solid transparent; */
+        /* } */
+
         .bg-lblue{
             background-color: skyblue;
             box-shadow: inset 10px 10px 10px 10px deepskyblue;
@@ -47,9 +52,8 @@
 
         div:not(.container){
             flex-basis: calc(10% - 2px);
-            padding-top: 10%;
-            height: 0px;
-            border: 1px solid transparent;
+            padding-top: calc(10% - 2px);
+            box-sizing: border-box;
         }
 
         .container{
@@ -58,56 +62,57 @@
         }
 
         .t-border{
-            border-top-color: black;
+            border-top: 1px solid black;
         }
 
         .l-border{
-            border-left-color: black;
+            border-left: 1px solid black;
         }
 
         .r-border{
-            border-right-color: black;
+            border-right: 1px solid black;
         }
 
         .b-border{
-            border-bottom-color: black;
+            border-bottom: 1px solid black;
         }
+
     </style>
 </head>
 <body>
     <div class = "container">
-        <div class = "bg-lblue"></div>
-        <div class = "bg-lblue"></div>
-        <div class = "bg-lblue"></div>
-        <div class = "bg-lblue"></div>
-        <div class = "bg-green"></div>
-        <div class = "bg-yellow"></div>
-        <div class = "bg-yellow"></div>
-        <div class = "bg-purple"></div>
-        <div class = "bg-purple"></div>
-        <div class = "bg-black"></div>
+        <div class = "bg-lblue b-border t-border l-border"></div>
+        <div class = "bg-lblue b-border t-border"></div>
+        <div class = "bg-lblue b-border t-border"></div>
+        <div class = "bg-lblue b-border r-border t-border"></div>
+        <div class = "bg-green r-border l-border t-border"></div>
+        <div class = "bg-yellow b-border l-border t-border"></div>
+        <div class = "bg-yellow b-border r-border t-border"></div>
+        <div class = "bg-purple b-border l-border t-border"></div>
+        <div class = "bg-purple r-border t-border"></div>
+        <div class = "bg-black l-border t-border"></div>
 
-        <div class = "bg-blue"></div>
-        <div class = "bg-blue"></div>
-        <div class = "bg-orange"></div>
-        <div class = "bg-black"></div>
-        <div class = "bg-green"></div>
-        <div class = "bg-green"></div>
-        <div class = "bg-red"></div>
-        <div class = "bg-red"></div>
-        <div class = "bg-purple"></div>
-        <div class = "bg-black"></div>
+        <div class = "bg-blue t-border l-border"></div>
+        <div class = "bg-blue r-border t-border"></div>
+        <div class = "bg-orange r-border l-border t-border"></div>
+        <div class = "bg-black b-border r-border l-border t-border"></div>
+        <div class = "bg-green b-border l-border"></div>
+        <div class = "bg-green r-border t-border"></div>
+        <div class = "bg-red b-border l-border t-border"></div>
+        <div class = "bg-red r-border t-border"></div>
+        <div class = "bg-purple b-border r-border l-border"></div>
+        <div class = "bg-black b-border l-border"></div>
 
-        <div class = "bg-blue"></div>
-        <div class = "bg-blue"></div>
-        <div class = "bg-orange"></div>
-        <div class = "bg-orange"></div>
-        <div class = "bg-orange"></div>
-        <div class = "bg-green"></div>
-        <div class = "bg-black"></div>
-        <div class = "bg-red"></div>
-        <div class = "bg-red"></div>
-        <div class = "bg-orange"></div>
+        <div class = "bg-blue l-border b-border"></div>
+        <div class = "bg-blue r-border b-border"></div>
+        <div class = "bg-orange l-border b-border"></div>
+        <div class = "bg-orange t-border b-border"></div>
+        <div class = "bg-orange r-border t-border b-border"></div>
+        <div class = "bg-green r-border l-border b-border"></div>
+        <div class = "bg-black r-border t-border b-border"></div>
+        <div class = "bg-red l-border b-border"></div>
+        <div class = "bg-red r-border t-border b-border"></div>
+        <div class = "bg-orange l-border t-border b-border"></div>
     </div>
     
 </body>
