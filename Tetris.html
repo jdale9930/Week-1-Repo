@@ -7,52 +7,70 @@
     <style>
         .bg-lblue{
             background-color: skyblue;
-            box-shadow: inset 10px 10px 10px 10px turquoise;
+            box-shadow: inset 10px 10px 10px 10px deepskyblue;
         }
 
         .bg-blue{
             background-color: blue;
-            border: 2px solid navy;
+            box-shadow: inset 10px 10px 10px 10px navy;
         }
 
         .bg-orange{
             background-color: orange;
-            border: 2px solid darkorange;
+            box-shadow: inset 10px 10px 10px 10px darkorange;
         }
 
         .bg-green{
             background-color: lime;
-            border: 2px solid green;
+            box-shadow: inset 10px 10px 10px 10px green;
         }
 
         .bg-yellow{
             background-color: yellow;
-            border: 2px solid yellowgreen;
+            box-shadow: inset 10px 10px 10px 10px yellowgreen;
         }
 
         .bg-red{
             background-color: red;
-            border: 2px solid darkred;
+            box-shadow: inset 10px 10px 10px 10px darkred;
         }
 
         .bg-purple{
             background-color: violet;
-            border: 2px solid purple
+            box-shadow: inset 10px 10px 10px 10px purple;
         }
 
         .bg-black{
             background-color: black;
+            box-shadow: inset 10px 10px 10px 10px black;
         }
 
         div:not(.container){
-            flex-basis: 10%;
+            flex-basis: calc(10% - 2px);
             padding-top: 10%;
             height: 0px;
+            border: 1px solid transparent;
         }
 
         .container{
             display: flex;
             flex-flow: row wrap;
+        }
+
+        .t-border{
+            border-top-color: black;
+        }
+
+        .l-border{
+            border-left-color: black;
+        }
+
+        .r-border{
+            border-right-color: black;
+        }
+
+        .b-border{
+            border-bottom-color: black;
         }
     </style>
 </head>
@@ -68,6 +86,28 @@
         <div class = "bg-purple"></div>
         <div class = "bg-purple"></div>
         <div class = "bg-black"></div>
+
+        <div class = "bg-blue"></div>
+        <div class = "bg-blue"></div>
+        <div class = "bg-orange"></div>
+        <div class = "bg-black"></div>
+        <div class = "bg-green"></div>
+        <div class = "bg-green"></div>
+        <div class = "bg-red"></div>
+        <div class = "bg-red"></div>
+        <div class = "bg-purple"></div>
+        <div class = "bg-black"></div>
+
+        <div class = "bg-blue"></div>
+        <div class = "bg-blue"></div>
+        <div class = "bg-orange"></div>
+        <div class = "bg-orange"></div>
+        <div class = "bg-orange"></div>
+        <div class = "bg-green"></div>
+        <div class = "bg-black"></div>
+        <div class = "bg-red"></div>
+        <div class = "bg-red"></div>
+        <div class = "bg-orange"></div>
     </div>
     
 </body>
