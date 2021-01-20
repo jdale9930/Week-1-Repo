@@ -35,7 +35,6 @@
 
         .small{
             flex-basis: calc(100% / 3 - 22px);
-            height: 75px;
         }
 
         .c-one{
@@ -44,6 +43,10 @@
 
         .c-two{
             flex-basis: calc((100% / 3) - 10px);
+            flex-flow: column wrap;
+        }
+        .height75{
+            height: 75px;
         }
 
     </style>
@@ -52,15 +55,17 @@
     <div class="bg-black"><header>HEADER</header></div>
     <div class = "container">
     <div class="container c-one">
-        <div class = "bg-blue small">1</div>
-        <div class = "bg-blue small">2</div>
-        <div class = "bg-blue small">3</div>
-        <div class = "bg-blue small">4</div>
-        <div class = "bg-blue small">5</div>
-        <div class = "bg-blue small">6</div>
+        <div class = "bg-blue small height75">1</div>
+        <div class = "bg-blue small height75">2</div>
+        <div class = "bg-blue small height75">3</div>
+        <div class = "bg-blue small height75">4</div>
+        <div class = "bg-blue small height75">5</div>
+        <div class = "bg-blue small height75">6</div>
     </div>
-    <div>
-
+    <div class="container c-two">
+        <div class = "bg-red height75">1</div>
+        <div class = "bg-red height75">1</div>
+        <div class = "bg-red height75">1</div>
     </div>
     </div>
 </body>
