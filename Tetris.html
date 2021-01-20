@@ -7,37 +7,37 @@
     <style>
         .bg-lblue{
             background-color: skyblue;
-            border-color: turquoise;
+            box-shadow: inset 10px 10px 10px 10px turquoise;
         }
 
         .bg-blue{
             background-color: blue;
-            border-color: navy;
+            border: 2px solid navy;
         }
 
         .bg-orange{
             background-color: orange;
-            border-color: darkorange;
+            border: 2px solid darkorange;
         }
 
         .bg-green{
             background-color: lime;
-            border-color: green;
+            border: 2px solid green;
         }
 
         .bg-yellow{
             background-color: yellow;
-            border-color: yellowgreen
+            border: 2px solid yellowgreen;
         }
 
         .bg-red{
             background-color: red;
-            border-color: darkred;
+            border: 2px solid darkred;
         }
 
         .bg-purple{
             background-color: violet;
-            background-color: purple
+            border: 2px solid purple
         }
 
         .bg-black{
@@ -46,19 +46,29 @@
 
         div:not(.container){
             flex-basis: 10%;
-            height: calc(100% / 3 - 4px);
-            border: 2px solid black;
+            padding-top: 10%;
+            height: 0px;
         }
 
         .container{
-            flex-basis: 100%;
             display: flex;
             flex-flow: row wrap;
         }
     </style>
 </head>
 <body>
-    <div class = "container"
+    <div class = "container">
+        <div class = "bg-lblue"></div>
+        <div class = "bg-lblue"></div>
+        <div class = "bg-lblue"></div>
+        <div class = "bg-lblue"></div>
+        <div class = "bg-green"></div>
+        <div class = "bg-yellow"></div>
+        <div class = "bg-yellow"></div>
+        <div class = "bg-purple"></div>
+        <div class = "bg-purple"></div>
+        <div class = "bg-black"></div>
+    </div>
     
 </body>
 </html>
