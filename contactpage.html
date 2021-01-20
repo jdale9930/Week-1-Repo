@@ -10,6 +10,14 @@
             display: flex;
             flex-flow: row wrap;
         }
+
+        .column{
+            flex-flow: column wrap;
+        }
+
+        .fb-half{
+            flex-basis: 50%;
+        }
     </style>
 </head>
 <body>
@@ -17,12 +25,15 @@
         <h1>Joshua Dale</h1>
         </div>
         
-        <div class = "container"> <!--picture -->
-        
+        <div class = "container">
+            <div class = "container column fb-half"><!-- contact info -->
+                <div class = "container">
+                    
+                </div>
+            </div>
+            <div class = "container fb-half"><!-- picture-->
+
+            </div> 
         </div>
-        
-        <div class = "container"><!-- contact info -->
-        
-        </div> 
 </body>
 </html>
