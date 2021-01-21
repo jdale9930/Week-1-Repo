@@ -28,8 +28,12 @@ div:not(.container){
     max-width: 250px;
 }
 
+.fb-twothirds{
+    flex-basis: calc((100% / 3) * 2);
+}
+
 .fb-full{
-flex-basis: 100%
+flex-basis: 100%;
 }
 
 .fb-quarter{
@@ -38,6 +42,11 @@ flex-basis: 100%
 
 .bg-grey{
     background-color: azure
+}
+
+.bg-blueg{
+    background: rgb(242,242,242);
+background: radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(0,51,112,1) 100%);
 }
 
 .center-align{
@@ -49,8 +58,8 @@ flex-basis: 100%
 }
 
 .bg-top{
-    background: rgb(0,33,36);
-background: linear-gradient(90deg, rgba(0,33,36,1) 0%, rgba(111,76,8,1) 48%, rgba(32,49,52,1) 100%);
+    background: rgb(5,14,34);
+background: linear-gradient(90deg, rgba(5,14,34,1) 0%, rgba(223,201,4,1) 76%, rgba(21,27,32,1) 100%);
 }
 
 .grey-shadow{
@@ -64,18 +73,128 @@ background: linear-gradient(90deg, rgba(0,33,36,1) 0%, rgba(111,76,8,1) 48%, rgb
 .height-30{
     height: 30px;
 }
+
+.hover-tab:hover{
+    background-color: yellow;
+}
+
+.bg-tan{
+    background: rgb(240,171,33);
+background: linear-gradient(90deg, rgba(240,171,33,1) 0%, rgba(255,255,255,1) 46%, rgba(251,243,225,1) 58%, rgba(245,222,176,1) 78%, rgba(224,156,19,1) 94%);
+}
+
+
 </style>
 </head>
-<body>
+<body class = "bg-blueg">
     <div class = "container column">
-        <div class = "bg-top fb-full" style = "color: white; padding-left: 20px;">
+        <div class = "bg-top fb-full height-30" style = "color: white; padding-left: 20px; padding-top: 15px; font-size: 20px;">
             Magnet Warrior Hub
         </div>
         <div class = "container">
-            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">TCG/OCG</div>
-            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">Duel Links</div>
-            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">Speed Duel</div>
-            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">Other</div>
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30 hover-tab" style = "line-height: 30px;">Home</div>
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30 hover-tab" style = "line-height: 30px;">TCG/OCG</div>
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30 hover-tab" style = "line-height: 30px;">Duel Links</div>
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30 hover-tab" style = "line-height: 30px;">Speed Duel</div>
+        </div>
+        
+        <div class = container>
+            <div class = "container fb-third">
+                <div class = "bg-grey grey-shadow rounded-edges" style = "padding-left: 10px; max-height: 230px;">
+                    <p>
+                        Learn how to play the fantastic Magnet Warriors!
+                        <br>
+                        <br>
+                        Magnet Warriors are a Yu-Gi-Oh! Archectype that consists of EARTH
+                        Rock Monsters. They are based around swarming the field, loading up the 
+                        Graveyard, and summoning the powerful Level 8 Magna Warriors.
+                    </p>
+                </div>
+            </div>
+
+            <div class = "container fb-twothirds column" style = "margin-left: 40px; margin-top: 20px;">
+                <div class = "container">
+                    <img display = "block" src = "berserkion.jpg" class ="berserkion rounded-edges" alt="Berserkion, the Electromagna Warrior" style = "height: 350px;">
+                    <div class = "fb-half" style = "margin-left: 40px;">
+                        <span style = "font-size: 25px"> Berserkion, the Electromagna Warrior</span>
+                        <br>
+                        Level 8 EARTH Rock
+                        <br>
+                        ATK: 3000 DEF: 2800
+                        <br>
+                        <div class = "bg-tan rounded-edges" style = "padding: 10px; border: solid 2px black;">
+                        Cannot be Normal Summoned/Set. Must first be Special Summoned 
+                        (from your hand) by banishing 1 "Alpha The Electromagnet Warrior", 
+                        "Beta The Electromagnet Warrior", and "Gamma The Electromagnet Warrior" 
+                        from your hand, Graveyard, and/or face-up from your Monster Zone. 
+                        You can banish 1 Level 4 or lower "Magnet Warrior" monster from your 
+                        Graveyard, then target 1 card your opponent controls; destroy it. 
+                        If this card is destroyed by battle, or if this card in its owner's 
+                        possession is destroyed by an opponent's card effect: You can target 1 
+                        each of your banished "Alpha The Electromagnet Warrior", 
+                        "Beta The Electromagnet Warrior", and "Gamma The Electromagnet Warrior"; 
+                        Special Summon them.
+                        </div>
+                    </div>
+                    <div class = "container">
+                        <img display = "block" src = "alpha.png" class ="rounded-edges" alt="Alpha, the Electromagnet Warrior" style = "height: 350px; margin-top: 20px;">
+                        <div class = "fb-half" style = "margin-left: 40px; margin-top: 20px;">
+                            <span style = "font-size: 25px;"> Alpha, the Electromagnet Warrior</span>
+                            <br>
+                            Level 3 EARTH Rock
+                            <br>
+                            ATK: 1700 DEF: 1100
+                            <br>
+                            <div class = "bg-tan rounded-edges" style = "padding: 10px; border: solid 2px black;">
+                                If this card is Normal or Special Summoned: 
+                                You can add 1 Level 8 "Magna Warrior" monster from your Deck to your hand. 
+                                You can only use this effect of "Alpha The Electromagnet Warrior" 
+                                once per turn. During your opponent's turn: You can Tribute this card; 
+                                Special Summon 1 Level 4 "Magnet Warrior" monster from your Deck 
+                                (this is a Quick Effect).
+                            </div>
+                        </div>
+
+                        <div class = "container">
+                            <img display = "block" src = "beta.png" class ="rounded-edges" alt="Alpha, the Electromagnet Warrior" style = "height: 350px; margin-top: 20px;">
+                            <div class = "fb-half" style = "margin-left: 40px; margin-top: 20px;">
+                                <span style = "font-size: 25px;"> Beta, the Electromagnet Warrior</span>
+                                <br>
+                                Level 3 EARTH Rock
+                                <br>
+                                ATK: 1500 DEF: 1500
+                                <br>
+                                <div class = "bg-tan rounded-edges" style = "padding: 10px; border: solid 2px black;">
+                                    If this card is Normal or Special Summoned: 
+                                    You can add 1 Level 4 or lower "Magnet Warrior" monster from your Deck to your hand, except "Beta, the Electromagnet Warrior". 
+                                    You can only use this effect of "Alpha The Electromagnet Warrior" 
+                                    once per turn. During your opponent's turn: You can Tribute this card; 
+                                    Special Summon 1 Level 4 "Magnet Warrior" monster from your Deck 
+                                    (this is a Quick Effect).
+                                </div>
+                            </div>
+
+                            <div class = "container">
+                                <img display = "block" src = "gamma.jpg" class ="rounded-edges" alt="Alpha, the Electromagnet Warrior" style = "height: 350px; margin-top: 20px;">
+                                <div class = "fb-half" style = "margin-left: 40px; margin-top: 20px;">
+                                    <span style = "font-size: 25px;"> Gamma, the Electromagnet Warrior</span>
+                                    <br>
+                                    Level 3 EARTH Rock
+                                    <br>
+                                    ATK: 800 DEF: 2000
+                                    <br>
+                                    <div class = "bg-tan rounded-edges" style = "padding: 10px; border: solid 2px black;">
+                                        If this card is Normal or Special Summoned: You can Special Summon 
+                                        1 Level 4 or lower "Magnet Warrior" monster from your hand, 
+                                        except "Gamma The Electromagnet Warrior". You can only use this effect 
+                                        of "Gamma The Electromagnet Warrior" once per turn. During your 
+                                        opponent's turn: You can Tribute this card; Special Summon 
+                                        1 Level 4 "Magnet Warrior" monster from your Deck (this is a Quick Effect).
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
