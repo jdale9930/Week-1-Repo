@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+div:not(.container){
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.column{
+    flex-flow: column wrap;
+}
+
+.fb-half{
+    flex-basis: 50%;
+}
+
+.fb-third{
+    flex-basis: calc(100% / 3);
+    max-width: 250px;
+}
+
+.fb-full{
+flex-basis: 100%
+}
+
+.fb-quarter{
+    flex-basis: calc(25%);
+}
+
+.bg-grey{
+    background-color: azure
+}
+
+.center-align{
+    justify-content: center;
+}
+
+.rounded-edges{
+    border-radius: 5px;
+}
+
+.bg-top{
+    background: rgb(0,33,36);
+background: linear-gradient(90deg, rgba(0,33,36,1) 0%, rgba(111,76,8,1) 48%, rgba(32,49,52,1) 100%);
+}
+
+.grey-shadow{
+    box-shadow: inset 4px 4px 8px  grey;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.height-30{
+    height: 30px;
+}
+</style>
+</head>
+<body>
+    <div class = "container column">
+        <div class = "bg-top fb-full" style = "color: white; padding-left: 20px;">
+            Magnet Warrior Hub
+        </div>
+        <div class = "container">
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">TCG/OCG</div>
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">Duel Links</div>
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">Speed Duel</div>
+            <div class = "fb-quarter text-center bg-grey grey-shadow height-30">Other</div>
+        </div>
+
+    </div>
+</body>
+</html>
